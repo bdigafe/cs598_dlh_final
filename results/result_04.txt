@@ -1,0 +1,64 @@
+Age(Year)   Epochs	max_seq_len	    batch_size	attention_heads num_hidden_layers   hidden_size	    lr	        Best Acc
+Yes 	    10	    256	            128	        12	                 6	            288	            1.00E-03	0.3379
+-------------------------------------------------------------------------------------------------------------------------
+epoch: 0	| Batches: 100	| Total samples: 12800	 |Loss: 4.181463189125061	| precision: 0.3336	| time: 88.69
+epoch: 0	| Batches: 200	| Total samples: 25600	 |Loss: 4.117471964359283	| precision: 0.3342	| time: 82.41
+epoch: 0	| Batches: 300	| Total samples: 38400	 |Loss: 4.111353628635406	| precision: 0.3367	| time: 82.50
+epoch: 0	| Batches: 400	| Total samples: 51200	 |Loss: 4.112309126853943	| precision: 0.3350	| time: 82.65
+epoch: 0	| Batches: 426	| Total samples: 54498	 |Loss: 4.099141680277311	| precision: 0.3350	| time: 21.29
+** ** * Saving fine - tuned model ** ** * 
+epoch: 1	| Batches: 100	| Total samples: 12800	 |Loss: 4.111952917575836	| precision: 0.3349	| time: 82.32
+epoch: 1	| Batches: 200	| Total samples: 25600	 |Loss: 4.110635921955109	| precision: 0.3349	| time: 82.84
+epoch: 1	| Batches: 300	| Total samples: 38400	 |Loss: 4.105889618396759	| precision: 0.3355	| time: 82.03
+epoch: 1	| Batches: 400	| Total samples: 51200	 |Loss: 4.103976619243622	| precision: 0.3354	| time: 82.11
+epoch: 1	| Batches: 426	| Total samples: 54498	 |Loss: 4.105862030616174	| precision: 0.3373	| time: 21.20
+** ** * Saving fine - tuned model ** ** * 
+epoch: 2	| Batches: 100	| Total samples: 12800	 |Loss: 4.099987523555756	| precision: 0.3364	| time: 82.38
+epoch: 2	| Batches: 200	| Total samples: 25600	 |Loss: 4.102426364421844	| precision: 0.3366	| time: 82.55
+epoch: 2	| Batches: 300	| Total samples: 38400	 |Loss: 4.103764224052429	| precision: 0.3346	| time: 82.05
+epoch: 2	| Batches: 400	| Total samples: 51200	 |Loss: 4.083285048007965	| precision: 0.3398	| time: 82.65
+epoch: 2	| Batches: 426	| Total samples: 54498	 |Loss: 4.119289196454561	| precision: 0.3311	| time: 21.49
+** ** * Saving fine - tuned model ** ** * 
+epoch: 3	| Batches: 100	| Total samples: 12800	 |Loss: 4.09796047449112	| precision: 0.3373	| time: 82.35
+epoch: 3	| Batches: 200	| Total samples: 25600	 |Loss: 4.091088759899139	| precision: 0.3382	| time: 82.08
+epoch: 3	| Batches: 300	| Total samples: 38400	 |Loss: 4.102082448005676	| precision: 0.3348	| time: 82.51
+epoch: 3	| Batches: 400	| Total samples: 51200	 |Loss: 4.073306813240051	| precision: 0.3420	| time: 82.46
+epoch: 3	| Batches: 426	| Total samples: 54498	 |Loss: 4.106751249386714	| precision: 0.3337	| time: 21.27
+** ** * Saving fine - tuned model ** ** * 
+epoch: 4	| Batches: 100	| Total samples: 12800	 |Loss: 4.107370316982269	| precision: 0.3336	| time: 82.21
+epoch: 4	| Batches: 200	| Total samples: 25600	 |Loss: 4.095584368705749	| precision: 0.3366	| time: 81.92
+epoch: 4	| Batches: 300	| Total samples: 38400	 |Loss: 4.099142816066742	| precision: 0.3365	| time: 82.51
+epoch: 4	| Batches: 400	| Total samples: 51200	 |Loss: 4.115955786705017	| precision: 0.3335	| time: 82.20
+epoch: 4	| Batches: 426	| Total samples: 54498	 |Loss: 4.085719466209412	| precision: 0.3388	| time: 21.33
+** ** * Saving fine - tuned model ** ** * 
+epoch: 5	| Batches: 100	| Total samples: 12800	 |Loss: 4.1108972406387325	| precision: 0.3341	| time: 82.41
+epoch: 5	| Batches: 200	| Total samples: 25600	 |Loss: 4.095486166477204	| precision: 0.3366	| time: 82.66
+epoch: 5	| Batches: 300	| Total samples: 38400	 |Loss: 4.097143404483795	| precision: 0.3355	| time: 82.25
+epoch: 5	| Batches: 400	| Total samples: 51200	 |Loss: 4.103348162174225	| precision: 0.3331	| time: 81.91
+epoch: 5	| Batches: 426	| Total samples: 54498	 |Loss: 4.090806007385254	| precision: 0.3364	| time: 21.28
+** ** * Saving fine - tuned model ** ** * 
+epoch: 6	| Batches: 100	| Total samples: 12800	 |Loss: 4.100191984176636	| precision: 0.3355	| time: 82.61
+epoch: 6	| Batches: 200	| Total samples: 25600	 |Loss: 4.103608374595642	| precision: 0.3357	| time: 82.87
+epoch: 6	| Batches: 300	| Total samples: 38400	 |Loss: 4.08953153848648	| precision: 0.3379	| time: 82.18
+epoch: 6	| Batches: 400	| Total samples: 51200	 |Loss: 4.0992008352279665	| precision: 0.3358	| time: 82.82
+epoch: 6	| Batches: 426	| Total samples: 54498	 |Loss: 4.0894356324122505	| precision: 0.3371	| time: 21.28
+** ** * Saving fine - tuned model ** ** * 
+epoch: 7	| Batches: 100	| Total samples: 12800	 |Loss: 4.10341954946518	| precision: 0.3357	| time: 82.36
+epoch: 7	| Batches: 200	| Total samples: 25600	 |Loss: 4.089811809062958	| precision: 0.3378	| time: 82.22
+epoch: 7	| Batches: 300	| Total samples: 38400	 |Loss: 4.085325262546539	| precision: 0.3388	| time: 82.62
+epoch: 7	| Batches: 400	| Total samples: 51200	 |Loss: 4.084025719165802	| precision: 0.3388	| time: 82.43
+epoch: 7	| Batches: 426	| Total samples: 54498	 |Loss: 4.091000767854544	| precision: 0.3399	| time: 21.20
+** ** * Saving fine - tuned model ** ** * 
+epoch: 8	| Batches: 100	| Total samples: 12800	 |Loss: 4.094600872993469	| precision: 0.3375	| time: 82.29
+epoch: 8	| Batches: 200	| Total samples: 25600	 |Loss: 4.093502843379975	| precision: 0.3370	| time: 82.28
+epoch: 8	| Batches: 300	| Total samples: 38400	 |Loss: 4.08561637878418	| precision: 0.3377	| time: 82.43
+epoch: 8	| Batches: 400	| Total samples: 51200	 |Loss: 4.09651584148407	| precision: 0.3370	| time: 82.25
+epoch: 8	| Batches: 426	| Total samples: 54498	 |Loss: 4.09590468956874	| precision: 0.3382	| time: 21.13
+** ** * Saving fine - tuned model ** ** * 
+epoch: 9	| Batches: 100	| Total samples: 12800	 |Loss: 4.109041857719421	| precision: 0.3340	| time: 82.26
+epoch: 9	| Batches: 200	| Total samples: 25600	 |Loss: 4.081685295104981	| precision: 0.3395	| time: 82.66
+epoch: 9	| Batches: 300	| Total samples: 38400	 |Loss: 4.113505878448486	| precision: 0.3323	| time: 82.30
+epoch: 9	| Batches: 400	| Total samples: 51200	 |Loss: 4.097724556922913	| precision: 0.3367	| time: 82.40
+epoch: 9	| Batches: 426	| Total samples: 54498	 |Loss: 4.085013545476473	| precision: 0.3381	| time: 21.40
+** ** * Saving fine - tuned model ** ** * 
+Best accuracy: 0.3379080957595803

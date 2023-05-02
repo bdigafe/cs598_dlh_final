@@ -1,0 +1,40 @@
+Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium 
+	 Weeks of gestation, Similarity=0.6521257162094116
+Supervision of high risk pregnancy 
+	 Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium, Similarity=0.6405696272850037
+Supervision of high risk pregnancy 
+	 Weeks of gestation, Similarity=0.637302041053772
+Other hemorrhoids 
+	 Polyp of colon, Similarity=0.6263095736503601
+Neoplasm of uncertain behavior of skin 
+	 Actinic keratosis, Similarity=0.6259315013885498
+Subacute and chronic vulvitis 
+	 Other specified noninflammatory disorders of vagina, Similarity=0.624294638633728
+Obstructive and reflux uropathy 
+	 Calculus of kidney and ureter, Similarity=0.6137647032737732
+Benign neoplasm of colon, rectum, anus and anal canal 
+	 Diverticular disease of intestine, Similarity=0.6117430329322815
+Other diseases of anus and rectum 
+	 Hemorrhoids and perianal venous thrombosis, Similarity=0.6104586720466614
+Superficial injury of head 
+	 Other and unspecified injuries of head, Similarity=0.6079360246658325
+Benign neoplasm of colon, rectum, anus and anal canal 
+	 Hemorrhoids and perianal venous thrombosis, Similarity=0.603598415851593
+Alcohol abuse 
+	 Alcohol dependence, Similarity=0.6028408408164978
+Diverticular disease of large intestine without perforation or abscess 
+	 Polyp of colon, Similarity=0.5936653017997742
+Other and unspecified ovarian cysts 
+	 Leiomyoma of uterus, unspecified, Similarity=0.5918169021606445
+Diverticular disease of large intestine without perforation or abscess 
+	 Other hemorrhoids, Similarity=0.5874903798103333
+Open wound of head 
+	 Other and unspecified injuries of head, Similarity=0.5814423561096191
+Benign neoplasm of colon, rectum, anus and anal canal 
+	 Other diseases of intestine, Similarity=0.5748730897903442
+Other specified disorders of nose and nasal sinuses 
+	 Chronic sinusitis, unspecified, Similarity=0.5707678198814392
+Chronic sinusitis 
+	 Other and unspecified disorders of nose and nasal sinuses, Similarity=0.567510187625885
+Benign prostatic hyperplasia without lower urinary tract symptoms 
+	 Benign prostatic hyperplasia with lower urinary tract symptoms, Similarity=0.5647885203361511

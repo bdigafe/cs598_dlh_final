@@ -1,0 +1,40 @@
+Supervision of high risk pregnancy 
+	 Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium, Similarity=0.6467320322990417
+Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium 
+	 Weeks of gestation, Similarity=0.6355143785476685
+Supervision of high risk pregnancy 
+	 Weeks of gestation, Similarity=0.6105488538742065
+Benign neoplasm of colon, rectum, anus and anal canal 
+	 Diverticular disease of intestine, Similarity=0.5175951719284058
+Neoplasm of uncertain behavior of skin 
+	 Actinic keratosis, Similarity=0.5128843784332275
+Viral infection of unspecified site 
+	 Other and unspecified noninfective gastroenteritis and colitis, Similarity=0.5113893151283264
+Specific developmental disorders of speech and language 
+	 Lack of expected normal physiological development in childhood and adults, Similarity=0.5093919634819031
+Subacute and chronic vulvitis 
+	 Other specified noninflammatory disorders of vagina, Similarity=0.5093281865119934
+Spondylosis 
+	 Other spondylopathies, Similarity=0.506951093673706
+Dislocation and sprain of joints and ligaments at neck level 
+	 Other and unspecified injuries of abdomen, lower back, pelvis and external genitals, Similarity=0.502477765083313
+Age-related cataract 
+	 Other retinal disorders, Similarity=0.4923039674758911
+Other sepsis 
+	 Obstructive and reflux uropathy, Similarity=0.4915764033794403
+Spondylosis 
+	 Cervical disc disorders, Similarity=0.4890500009059906
+Sprain of ligaments of lumbar spine 
+	 Sciatica, Similarity=0.4882128834724426
+Fracture of forearm 
+	 Fracture at wrist and hand level, Similarity=0.48622024059295654
+Streptococcal tonsillitis 
+	 Acute pharyngitis, unspecified, Similarity=0.4851498305797577
+Other disorders of white blood cells 
+	 Obstructive and reflux uropathy, Similarity=0.48482024669647217
+Unilateral primary osteoarthritis of knee 
+	 Osteoarthritis of knee, unspecified, Similarity=0.48070985078811646
+Other spondylosis 
+	 Other thoracic, thoracolumbar and lumbosacral intervertebral disc degeneration, Similarity=0.47943198680877686
+Noninfective gastroenteritis and colitis, unspecified 
+	 Vomiting, Similarity=0.47922271490097046
