@@ -328,9 +328,9 @@ def get_labelled_data(data, min_size: int, seq_ages):
     all_ages = []
     all_labels = []
 
-    visits = get_patient_visits(data.iloc[idx]['conditions'])
-
     for idx in range(len(data)):
+        visits = get_patient_visits(data.iloc[idx]['conditions'])
+
         if (len(visits) <= min_size + 1):
             continue
 
