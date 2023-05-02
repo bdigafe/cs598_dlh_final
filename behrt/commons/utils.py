@@ -322,14 +322,15 @@ def get_multi_hot_vector(visit, code2idx):
 
 
 def get_labelled_data(data, min_size: int, seq_ages):
+
     all_pids = []
     all_visits = []
     all_ages = []
     all_labels = []
 
-    for idx in range(len(data)):
-        visits = get_patient_visits(data.iloc[idx]['conditions'])
+    visits = get_patient_visits(data.iloc[idx]['conditions'])
 
+    for idx in range(len(data)):
         if (len(visits) <= min_size + 1):
             continue
 
@@ -338,9 +339,9 @@ def get_labelled_data(data, min_size: int, seq_ages):
         j = random.randint(min_size, len(visits)-2)
         xp = visits[:j]
         xp = [visit for visits in xp for visit in visits]
-        yp = visits[j+1]
 
-        p_age_seqs = seq_ages.iloc[idx, :len(xp)]
+        yp = visits[j]
+        p_age_seqs = seq_ages.iloc[idx]["ages"][:len(xp)]
 
         all_ages.append([age for age in p_age_seqs[1]])
         all_visits.append(xp)
