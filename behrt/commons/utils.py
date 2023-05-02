@@ -343,7 +343,7 @@ def get_labelled_data(data, min_size: int, seq_ages):
         yp = visits[j]
         p_age_seqs = seq_ages.iloc[idx]["ages"][:len(xp)]
 
-        all_ages.append([age for age in p_age_seqs[1]])
+        all_ages.append([age for age in p_age_seqs])
         all_visits.append(xp)
         all_labels.append(yp)
 
