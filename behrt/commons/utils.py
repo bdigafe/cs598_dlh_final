@@ -295,20 +295,37 @@ def remove_system_codes_from_token_dict(token2idx):
     return labelVocab
 
 
-def get_patient_visits(conditions):
-    visits = []
-    visit = []
+def get_patient_visits(conditions, age_seqs):
+    all_visits_conditions = []
+    visit_conditions = []
+
+    if len(conditions) != len(age_seqs):
+        print(
+            f'Error: conditions={len(conditions)} and age_seqs={len(age_seqs)} have different lengths')
+
+    c = 0
+    all_age_visits = []
+    age_visits = []
 
     for code in conditions:
         if (code == 'SEP'):
-            visit.append('SEP')
-            visits.append(visit)
-            visit = []
-        else:
-            if (code not in visit):
-                visit.append(code)
+            visit_conditions.append('SEP')
+            all_visits_conditions.append(visit_conditions)
+            visit_conditions = []
 
-    return visits
+            age_visits.append(age_seqs[c])
+            all_age_visits.append(age_visits)
+            age_visits = []
+
+        else:
+            if (code not in visit_conditions):
+                visit_conditions.append(code)
+            age_visits.append(age_seqs[c])
+
+        if (c < len(age_seqs)-1):
+            c += 1
+
+    return all_visits_conditions, all_age_visits
 
 
 def get_multi_hot_vector(visit, code2idx):
@@ -321,7 +338,7 @@ def get_multi_hot_vector(visit, code2idx):
     return vector
 
 
-def get_labelled_data(data, min_size: int, seq_ages):
+def get_labelled_data(data, min_size: int, seq_ages, num_months: int = 0):
 
     all_pids = []
     all_visits = []
@@ -329,28 +346,43 @@ def get_labelled_data(data, min_size: int, seq_ages):
     all_labels = []
 
     for idx in range(len(data)):
-        visits = get_patient_visits(data.iloc[idx]['conditions'])
+        visits, ages = get_patient_visits(
+            data.iloc[idx]['conditions'], seq_ages.iloc[idx]['ages'])
 
         if (len(visits) <= min_size + 1):
             continue
 
-        all_pids.append(data.iloc[idx]["pid"])
+        j = 0
+        if (num_months > 0):
+            prev_age = int(ages[min_size-1][0])
 
-        j = random.randint(min_size, len(visits)-2)
+            for i in range(min_size, len(ages)):
+                if (int(ages[i][0]) - prev_age >= num_months):
+                    j = i
+                    break
+            # if there is no visit after num_months, skip this patient
+            if (j == 0):
+                continue
+        else:
+            j = random.randint(min_size, len(visits)-2)
+
+        all_pids.append(data.iloc[idx]["pid"])
         xp = visits[:j]
         xp = [visit for visits in xp for visit in visits]
 
         yp = visits[j]
-        p_age_seqs = seq_ages.iloc[idx]["ages"][:len(xp)]
 
-        all_ages.append([age for age in p_age_seqs])
+        xp_ages = ages[:j]
+        xp_ages = [age for ages in xp_ages for age in ages]
+
+        all_ages.append(xp_ages)
         all_visits.append(xp)
         all_labels.append(yp)
 
     return DataFrame({'pid': all_pids, 'visit': all_visits, 'age': all_ages, 'label': all_labels})
 
 
-def split_data(data, seq_ages, train_ratio=0.8, min_size=4):
+def split_data(data, seq_ages, train_ratio=0.8, min_size=4, num_months=0):
     """
         Generate train and test dataset from the original dataset.
         The data dataset contains the EHR of all patients.
@@ -365,11 +397,26 @@ def split_data(data, seq_ages, train_ratio=0.8, min_size=4):
     """
 
     # Split data into train and test
+
     train_size = int(len(data) * train_ratio)
+
     train_data = data[:train_size]
     test_data = data[train_size:]
 
-    train_dataset = get_labelled_data(train_data, min_size, seq_ages)
-    test_dataset = get_labelled_data(test_data, min_size, seq_ages)
+    train_age_seqs = seq_ages[:train_size]
+    test_age_seqs = seq_ages[train_size:]
+
+    train_dataset = get_labelled_data(
+        train_data, min_size, train_age_seqs, num_months)
+    test_dataset = get_labelled_data(
+        test_data, min_size, test_age_seqs, num_months)
+
+    """  
+    data = get_labelled_data(data, min_size, seq_ages, num_months=num_months)
+    train_size = int(len(data) * train_ratio)
+
+    train_dataset = data[train_size:]
+    test_dataset = data[:train_size]
+    """
 
     return train_dataset, test_dataset

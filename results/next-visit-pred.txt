@@ -1,0 +1,106 @@
+Epochs=20
+auroc = auroc: 0.8737
+precision : 0.5079
+
+--------------------------------------------------------------------------------------------------
+Epoch: 0 training started...
+epoch: 0	| Cnt: 1	| Samples: 128, Loss: 0.0003302598744630814	| precision: 0.49488489582218853
+epoch: 0	| Cnt: 101	| Samples: 12928, Loss: 0.03439836429432035	| precision: 0.48220981917850014
+epoch: 0	| Cnt: 201	| Samples: 25728, Loss: 0.03403788104653358	| precision: 0.478597313332621
+precision : 0.45311647406005195, auroc: 0.815636898862504,
+Epoch: 1 training started...
+epoch: 1	| Cnt: 1	| Samples: 128, Loss: 0.00035497024655342104	| precision: 0.48953100901862845
+epoch: 1	| Cnt: 101	| Samples: 12928, Loss: 0.03425452115014196	| precision: 0.4727963490205479
+epoch: 1	| Cnt: 201	| Samples: 25728, Loss: 0.03430703034624458	| precision: 0.4770563058101994
+precision : 0.45175976549582736, auroc: 0.8157377769622934,
+Epoch: 2 training started...
+epoch: 2	| Cnt: 1	| Samples: 128, Loss: 0.00034146808087825775	| precision: 0.48558854960753084
+epoch: 2	| Cnt: 101	| Samples: 12928, Loss: 0.034115400649607185	| precision: 0.4946619451319671
+epoch: 2	| Cnt: 201	| Samples: 25728, Loss: 0.03434196563437581	| precision: 0.47841630262234164
+precision : 0.4528687214296085, auroc: 0.816053563839835,
+Epoch: 3 training started...
+epoch: 3	| Cnt: 1	| Samples: 128, Loss: 0.0003590584546327591	| precision: 0.45806101003317595
+epoch: 3	| Cnt: 101	| Samples: 12928, Loss: 0.034254719819873575	| precision: 0.4819508604622478
+epoch: 3	| Cnt: 201	| Samples: 25728, Loss: 0.034089570101350546	| precision: 0.4696438150740899
+precision : 0.4529730353449268, auroc: 0.8160240690575965,
+Epoch: 4 training started...
+epoch: 4	| Cnt: 1	| Samples: 128, Loss: 0.00032647117972373963	| precision: 0.4949213029586068
+epoch: 4	| Cnt: 101	| Samples: 12928, Loss: 0.034048273134976624	| precision: 0.47900391356369076
+epoch: 4	| Cnt: 201	| Samples: 25728, Loss: 0.03424008464440703	| precision: 0.4967779616142839
+precision : 0.4539870351548613, auroc: 0.8162120763296119,
+Epoch: 5 training started...
+epoch: 5	| Cnt: 1	| Samples: 128, Loss: 0.00035138212144374847	| precision: 0.4824760847314611
+epoch: 5	| Cnt: 101	| Samples: 12928, Loss: 0.03410578003153205	| precision: 0.4779414259799365
+epoch: 5	| Cnt: 201	| Samples: 25728, Loss: 0.034177403207868336	| precision: 0.493935780157779
+precision : 0.45239656203632417, auroc: 0.8163063466923549,
+Epoch: 6 training started...
+epoch: 6	| Cnt: 1	| Samples: 128, Loss: 0.0003566896915435791	| precision: 0.4647953928597697
+epoch: 6	| Cnt: 101	| Samples: 12928, Loss: 0.0344173676520586	| precision: 0.5038123906959115
+epoch: 6	| Cnt: 201	| Samples: 25728, Loss: 0.034186920560896394	| precision: 0.4798522516558641
+precision : 0.4531037123441591, auroc: 0.8163995639375258,
+Epoch: 7 training started...
+epoch: 7	| Cnt: 1	| Samples: 128, Loss: 0.00033099479973316195	| precision: 0.49618802057941813
+epoch: 7	| Cnt: 101	| Samples: 12928, Loss: 0.03414200954139233	| precision: 0.48134959967335417
+epoch: 7	| Cnt: 201	| Samples: 25728, Loss: 0.034327438194304706	| precision: 0.4998593339669381
+precision : 0.45303856808446963, auroc: 0.8160499603323257,
+Epoch: 8 training started...
+epoch: 8	| Cnt: 1	| Samples: 128, Loss: 0.0003364633023738861	| precision: 0.49071469829863523
+epoch: 8	| Cnt: 101	| Samples: 12928, Loss: 0.03409986473619938	| precision: 0.5078479211958331
+epoch: 8	| Cnt: 201	| Samples: 25728, Loss: 0.03417688261717558	| precision: 0.4846068456952273
+precision : 0.4532216753710347, auroc: 0.8162797334096014,
+Epoch: 9 training started...
+epoch: 9	| Cnt: 1	| Samples: 128, Loss: 0.00034613221883773805	| precision: 0.4755919074231668
+epoch: 9	| Cnt: 101	| Samples: 12928, Loss: 0.034458701461553574	| precision: 0.47333734024652063
+epoch: 9	| Cnt: 201	| Samples: 25728, Loss: 0.03429368905723095	| precision: 0.48099287211520025
+precision : 0.4524104016403407, auroc: 0.8162619770414937,
+Epoch: 10 training started...
+epoch: 10	| Cnt: 1	| Samples: 128, Loss: 0.0003466833382844925	| precision: 0.4730556131151626
+epoch: 10	| Cnt: 101	| Samples: 12928, Loss: 0.034216574616730215	| precision: 0.49484427042152057
+epoch: 10	| Cnt: 201	| Samples: 25728, Loss: 0.03393692471086979	| precision: 0.4966180604000961
+precision : 0.4531632123032301, auroc: 0.8162506450956873,
+Epoch: 11 training started...
+epoch: 11	| Cnt: 1	| Samples: 128, Loss: 0.00034111194312572477	| precision: 0.49279782588231513
+epoch: 11	| Cnt: 101	| Samples: 12928, Loss: 0.03396449996158481	| precision: 0.4883885815659208
+epoch: 11	| Cnt: 201	| Samples: 25728, Loss: 0.034162758979946375	| precision: 0.4942928659530901
+precision : 0.4549299678222114, auroc: 0.8166269625792538,
+Epoch: 12 training started...
+epoch: 12	| Cnt: 1	| Samples: 128, Loss: 0.00033757928758859634	| precision: 0.4816189885561819
+epoch: 12	| Cnt: 101	| Samples: 12928, Loss: 0.034077461995184424	| precision: 0.4845067180873822
+epoch: 12	| Cnt: 201	| Samples: 25728, Loss: 0.0339963641948998	| precision: 0.49265666211643294
+precision : 0.458962783058283, auroc: 0.8187081440844457,
+Epoch: 13 training started...
+epoch: 13	| Cnt: 1	| Samples: 128, Loss: 0.0003455018624663353	| precision: 0.4890264605188188
+epoch: 13	| Cnt: 101	| Samples: 12928, Loss: 0.03388420354574919	| precision: 0.4872422001026683
+epoch: 13	| Cnt: 201	| Samples: 25728, Loss: 0.0337730261310935	| precision: 0.51378580658897
+precision : 0.46363542061741997, auroc: 0.8227821119621485,
+Epoch: 14 training started...
+epoch: 14	| Cnt: 1	| Samples: 128, Loss: 0.00031502436846494677	| precision: 0.5189389177145123
+epoch: 14	| Cnt: 101	| Samples: 12928, Loss: 0.033503209706395864	| precision: 0.504225290243951
+epoch: 14	| Cnt: 201	| Samples: 25728, Loss: 0.03378662144765258	| precision: 0.49473680484531923
+precision : 0.4693982351766986, auroc: 0.8269080885036763,
+Epoch: 15 training started...
+epoch: 15	| Cnt: 1	| Samples: 128, Loss: 0.0003181397169828415	| precision: 0.5123365874313418
+epoch: 15	| Cnt: 101	| Samples: 12928, Loss: 0.033414139989763496	| precision: 0.5180690304178177
+epoch: 15	| Cnt: 201	| Samples: 25728, Loss: 0.03352638298645615	| precision: 0.5075903839824074
+precision : 0.47612049851107874, auroc: 0.8328691307864841,
+Epoch: 16 training started...
+epoch: 16	| Cnt: 1	| Samples: 128, Loss: 0.0003715162351727486	| precision: 0.5039910437711489
+epoch: 16	| Cnt: 101	| Samples: 12928, Loss: 0.03316813055425882	| precision: 0.5162276105224558
+epoch: 16	| Cnt: 201	| Samples: 25728, Loss: 0.033012664634734394	| precision: 0.5248500485191218
+precision : 0.481529445804981, auroc: 0.8394596071807492,
+Epoch: 17 training started...
+epoch: 17	| Cnt: 1	| Samples: 128, Loss: 0.00032601069658994675	| precision: 0.5005867314380087
+epoch: 17	| Cnt: 101	| Samples: 12928, Loss: 0.03277796035632491	| precision: 0.5429476882731666
+epoch: 17	| Cnt: 201	| Samples: 25728, Loss: 0.032579057049006224	| precision: 0.5205371775796014
+precision : 0.490066261737092, auroc: 0.8505022896308648,
+Epoch: 18 training started...
+epoch: 18	| Cnt: 1	| Samples: 128, Loss: 0.0003345450386404991	| precision: 0.522420671965906
+epoch: 18	| Cnt: 101	| Samples: 12928, Loss: 0.03229024549946189	| precision: 0.5566967953355727
+epoch: 18	| Cnt: 201	| Samples: 25728, Loss: 0.03218525428324938	| precision: 0.4999449528379954
+precision : 0.4982829586680633, auroc: 0.8618469390488279,
+Epoch: 19 training started...
+epoch: 19	| Cnt: 1	| Samples: 128, Loss: 0.00033434830605983735	| precision: 0.5160082494608116
+epoch: 19	| Cnt: 101	| Samples: 12928, Loss: 0.032014222480356694	| precision: 0.5309861785504421
+epoch: 19	| Cnt: 201	| Samples: 25728, Loss: 0.03151282941922545	| precision: 0.5459582344077318
+precision : 0.5078713394953799, auroc: 0.8737046610269813
+
