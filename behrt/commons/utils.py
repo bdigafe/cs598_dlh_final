@@ -338,6 +338,19 @@ def get_multi_hot_vector(visit, code2idx):
     return vector
 
 
+def get_random_visit(ages, min_visit, num_months):
+    candidate_idxs = []
+
+    for i in range(min_visit, len(ages)):
+        if (int(ages[i][0]) - int(ages[i-1][0]) >= num_months):
+            candidate_idxs.append(i)
+
+    if (len(candidate_idxs) > 0):
+        return random.choice(candidate_idxs)
+    else:
+        return 0
+
+
 def get_labelled_data(data, min_size: int, seq_ages, num_months: int = 0):
 
     all_pids = []
@@ -352,14 +365,9 @@ def get_labelled_data(data, min_size: int, seq_ages, num_months: int = 0):
         if (len(visits) <= min_size + 1):
             continue
 
-        j = 0
         if (num_months > 0):
-            prev_age = int(ages[min_size-1][0])
+            j = get_random_visit(ages, min_size, num_months)
 
-            for i in range(min_size, len(ages)):
-                if (int(ages[i][0]) - prev_age >= num_months):
-                    j = i
-                    break
             # if there is no visit after num_months, skip this patient
             if (j == 0):
                 continue
@@ -410,13 +418,5 @@ def split_data(data, seq_ages, train_ratio=0.8, min_size=4, num_months=0):
         train_data, min_size, train_age_seqs, num_months)
     test_dataset = get_labelled_data(
         test_data, min_size, test_age_seqs, num_months)
-
-    """  
-    data = get_labelled_data(data, min_size, seq_ages, num_months=num_months)
-    train_size = int(len(data) * train_ratio)
-
-    train_dataset = data[train_size:]
-    test_dataset = data[:train_size]
-    """
 
     return train_dataset, test_dataset
