@@ -1,16 +1,39 @@
 
+# Original paper
+This is a reproducibility study based on the work of [BEHRT](https://www.nature.com/articles/s41598-020-62922-y)
+Source code can be found here: [https://github.com/deepmedicine/BEHRT](https://github.com/deepmedicine/BEHRT)
+
+# Dependencies
+The following packages need to be installed when running on a local machine. If running in Google colab, the notebooks will auto install these packages.
+
+- pickle
+- numpy
+- torch
+- sklearn
+- mpld3
+- mplcursors
+- pytorch_pretrained_bert
+
+To run automatic hyper-parameter optimization (not fully tested!!)
+- optuna
+- optuna-dashboard
+
+# Data
+To run MLM and disease prediciton the required data is already in the /data folder.
+To get the synthetic data, go to [https://app.medisyn.ai/](https://app.medisyn.ai/), sign-in with GitHub. Download outpatient data.
+
 # General
-Notebook files can be run on a local machine where all the files are located in a specific folder and required packages are already preinstalled. It is also possible, and recommnded, to run them in Google Colab. The notebooks include pip install commands to load the required packages.
+Notebook files can be run on a local machine after installing required packages. It is also possible, and recommended, to run them in Google Colab. The notebooks include pip install commands to load the required packages and download the data and model from this repository.
 
 - Set the local_mode = True to run in a local machine. The default is False.
 
 # Pre-processing
-The [behrt/data_prep.ipynb](/behrt/data_prep.ipynb) notebook takes all the source data (csv files) and generates pickle files that are used for pre-training and disease prediction. The input files are big, even after compression, and we could not add them to github. However, the pickle files are available in the data folder.
+The [behrt/data_prep.ipynb](/behrt/data_prep.ipynb) notebook takes all the source data (csv files) and generates pickle files that are used for pre-training and disease prediction. The input files are big, even after compression, and we could not add them to GitHub. However, the pickle files are available in the data folder.
 
 # Pre-training
 [behrt/berth.ipynb](/behrt/behrth.ipynb): Implements the pre-training and MLM tasks. The notebook can run in Google Colab or a local machine and parameters (hyper-parameters, sample size, file locations, etc.). The number of epochs is defaulted to 5, but the saved model was trained on 50 epochs.
 
-To load the saved model and view the 2D embeddings or the top similar conditons, set the train_model_flag = False.
+To load the saved model and view the 2D embeddings or the top similar conditons, set the **train_model_flag = False**.
 
  # Pre-trained model
  The pre-trained model used for next disease predictions is located under the saved models folder (mlm128.pt).
@@ -83,3 +106,4 @@ The 2D disease map is located here.\
 	 Benign prostatic hyperplasia with lower urinary tract symptoms, Similarity=0.5647885203361511
 
 
+# Prediction results
