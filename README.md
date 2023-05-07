@@ -107,3 +107,22 @@ The 2D disease map is located here.\
 
 
 # Prediction results
+## Hyper-parameters 
+The following hyper-parameters have been used.
+
+| Parameter         | Value    |
+|-------------------|----------|
+| Epochs            | 20       |
+| max_seq_len       | 256      |
+| batch_size        | 128      |
+| attention_heads   | 12       |
+| num_hidden_layers | 6        |
+| hidden_size       | 288      |
+| lr                | 3.00E-05 |
+
+## Results
+| Prediction     | Data size | Best Acc | AUROC  |
+|----------------|-----------|----------|--------|
+| Next 6 months  | 26,187    | 0.461    | 0.8302 |
+| Next 12 months | 13,157    | 0.512    | 0.8344 |
+
